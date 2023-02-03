@@ -35,9 +35,25 @@
     flex-basis: calc(50% - 1em);
   }
 
+  .flex-item:first-child {
+    min-height: 300px;
+    flex-basis: 100%;
+  }
+
   .flex-item div {
     background-color: lightgreen;
     padding: 10px;
+    margin: .5em;
+    min-height: 150px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .flex-item {
+      flex-basis: 100%;
+    }
+    .flex-item:first-child {
+      min-height: 150px;
+    }
   }
 
   .project1 {
