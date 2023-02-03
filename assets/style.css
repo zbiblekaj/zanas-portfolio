@@ -22,18 +22,36 @@
     margin: 0;
   }
 
+  .flex {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .flex-item {
+    display: flex;
+    align-items: flex-end;
+    flex-basis: calc(50% - 1em);
+  }
+
+  .flex-item div {
+    background-color: lightgreen;
+    padding: 10px;
+  }
+
   .project1 {
-    background-image: url('../');
+    background-image: url('../assets/images/code-image.jpeg');
   }
   .project2 {
-    background-image: url('../');
+    background-image: url('../assets/images/finance-image.jpeg');
   }
   .project3 {
-    background-image: url('../');
+    background-image: url('../assets/images/computer-image.gif');
   }
   .project4 {
-    background-image: url('../');
+    background-image: url('../assets/images/screens-and-coding-image.jpeg');
   }
   .project5 {
-    background-image: url('../');
+    background-image: url('../assets/images/daily-planning-image.jpeg');
   }
