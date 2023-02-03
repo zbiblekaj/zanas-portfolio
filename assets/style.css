@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  
+  p {
+    margin: 0;
+  }
+
+  .flex {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .flex-item {
+    display: flex;
+    align-items: flex-end;
+    flex-basis: calc(50% - 1em);
+  }
+
+  .flex-item:first-child {
+    min-height: 300px;
+    flex-basis: 100%;
+  }
+
+  .flex-item div {
+    background-color: lightgreen;
+    padding: 10px;
+    margin: .5em;
+    min-height: 150px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .flex-item {
+      flex-basis: 100%;
+    }
+    .flex-item:first-child {
+      min-height: 150px;
+    }
+  }
+
+  .project1 {
+    background-image: url('../assets/images/code-image.jpeg');
+  }
+  .project2 {
+    background-image: url('../assets/images/finance-image.jpeg');
+  }
+  .project3 {
+    background-image: url('../assets/images/computer-image.gif');
+  }
+  .project4 {
+    background-image: url('../assets/images/screens-and-coding-image.jpeg');
+  }
+  .project5 {
+    background-image: url('../assets/images/daily-planning-image.jpeg');
+  }
