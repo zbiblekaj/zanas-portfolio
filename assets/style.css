@@ -16,7 +16,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
-    background-color: #848884;
+    background-color: rgb(101, 163, 230);
     color: #FFF7EC;
     position: fixed;
     height: 80px;
@@ -39,18 +39,19 @@
   /* Remove underline on links*/
   a{
     text-decoration: none;
+    color: white;
     font-size: 20px;
     display: block;
     padding: 8px
   }
   /* change the color of links when a user hovers over them */
   li a:hover{
-    color:white
+    color: darkblue;
   }
 
   /* change the color of links to show which ones have been accessed already*/
   .active{
-    color: darkslateblue;
+    color: rgba(255, 255, 255, 0.855);
   }
   
   .hero-banner {
@@ -58,10 +59,23 @@
     align-items: flex-end;
     justify-content: flex-end;
     text-align: right;
-    background-image: url(../assets/images/background-image-5.jpeg);
+    background-image: url(../assets/images/modern-abstract-blue-transparent-crystal-pattern-background_1409-1283.avif);
     background-repeat: no-repeat;
     background-size: 100%;
     height: 200px;
+  }
+
+  .hero-banner div {
+    background-color: rgb(101, 163, 230);
+    color: white;
+    padding: 5px;
+    font-size: 13px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .hero-banner h2{
+    font-weight: normal;
   }
 
   .subtitle {
