@@ -141,7 +141,8 @@
   }
 
   .flex-item div {
-    background-color: #848884;
+    background-color:  rgb(202, 219, 229);
+    color: rgb(0, 0, 85);
     padding: 8px 10px;
     margin: .5em;
   }
