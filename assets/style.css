@@ -77,6 +77,35 @@
     margin: 0;
   }
 
+  .page-wrapper {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-section {
+    margin: 27px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .page-section > h2 {
+    flex: 0 0 22%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid black;
+    font-size: 4vw;
+    line-height: 1.1;
+  }
+
+  .page-section > div {
+    flex: 0 0 75%;
+  }
+
   .flex {
     display:flex;
     flex-direction: row;
