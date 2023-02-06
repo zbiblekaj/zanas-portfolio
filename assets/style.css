@@ -7,7 +7,7 @@
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
-    background-color: #D3D3D3;
+    background-color: rgb(202, 219, 229);
   }
   /* style the header*/
   .header {
@@ -111,9 +111,10 @@
     flex: 0 0 22%;
     text-align: right;
     padding-right: 15px;
-    border-right: 4px solid black;
+    border-right: 4px solid rgb(0, 0, 85);
     font-size: 4vw;
     line-height: 1.1;
+    color: rgb(0, 0, 85);
   }
 
   .page-section > div {
