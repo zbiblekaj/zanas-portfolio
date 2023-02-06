@@ -168,6 +168,7 @@
     margin: .5em;
   }
 
+  /*apply styling to the textboxes within the flex items so that the font size is responsive and fits within the borders, the height and width are the same for all of the text boxes*/
   .Button {
     display: flex;
     line-height: 100%;
@@ -179,12 +180,14 @@
     transition: 0.5s;
   }
 
+  /*when a user hovers over a textbox within a flex item, the background color is different, the letters are more spaced out and there is a glow*/
   .Button:hover {
     background: var(--clr);
     letter-spacing: 0.25em;
     box-shadow: 0 0 35px var(--clr);
   }
 
+  /*style the textboxes so that when the hover are applied, the blue background color is only seen as a border around the original text & background color*/
   .Button::before {
     content: '';
     position:absolute;
