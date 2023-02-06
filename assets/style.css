@@ -3,6 +3,7 @@
     letter-spacing: 0.1em;
   }
 
+  /*apply styling to all aspects of the page. styling includes a congurent font, backgroun color & margin/padding settings. */
   body {
     margin: 0;
     padding: 0;
@@ -24,13 +25,13 @@
     position:absolute;
   }
 
-  /* added margin to the main title so that there is some space between the border of the page */
+  /* add margin to the main title so that there is some space between the border of the page*/
   .header h1 {
     margin-left: 5px;
   }
 
-  /* style the links on the nav bar so that they are non bulletted and in line with the header */
-  ul {
+  /* style the links on the nav bar so that they are non bulletted and in line with the header. Add code so that transitions are smooth. */
+  .header ul {
     list-style-type: none;
     margin: 0%;
     padding:0%;
@@ -39,36 +40,33 @@
     text-decoration: none;
   }
 
-  li {
+  /*style nav links so that they are side by side & display from the first option to the last.*/
+  .header li {
     display: inline;
-    float: right;
+    float: left;
   }
   
-  /* Remove underline on links*/
-  a{
+  /* Remove underline on links & apply styles*/
+  .header a{
     text-decoration: none;
     color: white;
     font-size: 20px;
     display: block;
     padding: 8px
   }
-
-  ul:hover a{
+  /* change the color of links when a user hovers over them */
+  .header ul:hover a{
     opacity: 0.2;
     filter: blur(2px);
   }
-    /* change the color of links when a user hovers over them */
-  li a:hover{
-      color: darkblue;
+  /* change the color of links when a user hovers over them & blur out options that aren't in use.*/
+  .header li a:hover{
+      color: rgb(0, 0, 85);
       opacity: 1;
       filter: blur(0px);
     }
-
-  /* change the color of links to show which ones have been accessed already*/
-  .active{
-    color: rgba(255, 255, 255, 0.855);
-  }
   
+  /*style the banner below the header so that the caption web developer is to the right of the page and there is a background image instead of color.*/
   .hero-banner {
     display: flex;
     align-items: flex-end;
@@ -81,6 +79,7 @@
     height: 200px;
   }
 
+    /*style the text on the banner so that there is a different background color and the text is white.*/
   .hero-banner div {
     background-color: rgb(0, 0, 0, 0.4);
     color: white;
@@ -89,20 +88,15 @@
     margin-right: 10px;
     margin-bottom: 10px;
   }
-
+  /*thin header on banner*/
   .hero-banner h2{
     font-weight: normal;
   }
-
-  .subtitle {
-    padding: 15px;
-    margin: 0%;
-  }
-
+  /*apply margins to the headers*/
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
   }
-  
+  /*style the paragraph on the about me section so that it floats to the right, margins applied & color of text*/
   #about p {
     margin-left: 10px;
     flex: 60%;
@@ -111,12 +105,14 @@
     color:rgb(0, 0, 85);
   }
 
+  /*style the titles on the page so that they are towards the left of the page*/
   .page-wrapper {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
-
+  
+  /*style the portfolio container with margins, padding, apply flex properties so that each flex item is aligned in a row.*/
   .page-section {
     margin: 27px 0;
     padding: 10px 0;
@@ -126,7 +122,8 @@
     align-items: stretch;
     justify-content: space-between;
   }
-
+  
+  /*add a line at the left side of the titles for aesthetic purposes.*/
   .page-section > h2 {
     flex: 0 0 22%;
     text-align: right;
@@ -136,11 +133,11 @@
     line-height: 1.1;
     color: rgb(0, 0, 85);
   }
-
+  /* style portfolio flex containers so that they are on the right side of the line*/
   .page-section > div {
     flex: 0 0 75%;
   }
-
+  /*apply flex properties so that rows 2 & 3 each contain 2 flex items. */
   .flex {
     display:flex;
     flex-direction: row;
@@ -148,6 +145,7 @@
     flex-wrap: wrap;
   }
 
+    /* apply flex properties to size the flex items on rows 2&3 so that they take up equal space on the row and are the same size.*/
   .flex-item {
     display: flex;
     align-items: flex-end;
@@ -155,12 +153,14 @@
     min-height: 170px;
   }
 
+    /*apply flex properties so that row 1 contains one larger flex item.*/
   .flex-item:first-child {
     min-height: 300px;
     flex-basis: 100%;
     margin: 10px;
   }
 
+  /*apply styling to the text boxes inside of the flex items under the portfolio section so that the background color is the same that of the page & text color congurent with the rest of the webpage.*/
   .flex-item div {
     background-color:  rgb(202, 219, 229, 0.7);
     color: rgb(0, 0, 85);
@@ -231,6 +231,13 @@
     left: 80%;
 }
 
+/* Remove underline on links*/
+#work a{
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px
+}
+
   .project1 {
     background-image: url('../assets/images/coding-3.gif');
     background-repeat: no-repeat;
@@ -266,7 +273,41 @@
     background-position:center;
     margin: 10px;
   }
-
+  
+  /* footer */
+    /* style the links on the nav bar so that they are non bulletted and in line with the header */
+    #contact ul {
+      list-style-type: none;
+      margin: 0%;
+      padding:0%;
+      height: 100%;
+      transition: 0.5s;
+      text-decoration: none;
+    }
+  
+    #contact li {
+      display: inline;
+      float: left;
+    }
+    
+    /* Remove underline on links*/
+    #contact a{
+      text-decoration: none;
+      color: rgb(0, 0, 85);
+      font-size: 20px;
+      display: block;
+      padding: 8px
+    }
+  
+    #contact ul:hover a{
+      opacity: 0.2;
+      filter: blur(2px);
+    }
+      /* change the color of links when a user hovers over them */
+    #contact li a:hover{
+        opacity: 1;
+        filter: blur(0px);
+      }
 
   @media screen and (max-width: 768px) {
     .flex-item {
@@ -307,5 +348,15 @@
       font-size: 13px;
       margin: auto;
       margin-top: 125px;
+    }
+
+    #contact {
+
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .flex-item {
+      flex-basis: 100%;
     }
   }
