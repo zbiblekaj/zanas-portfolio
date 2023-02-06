@@ -7,7 +7,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.5;
     background-color: rgb(202, 219, 229);
   }
   /* style the header*/
@@ -19,6 +18,7 @@
     align-items: flex-end;
     background-color: rgb(0, 0, 0, 0.4);
     color: #FFF7EC;
+    line-height: 1.5;
     height: 80px;
     width: 100%;
     position:absolute;
@@ -58,7 +58,7 @@
     filter: blur(2px);
   }
     /* change the color of links when a user hovers over them */
-    li a:hover{
+  li a:hover{
       color: darkblue;
       opacity: 1;
       filter: blur(0px);
@@ -103,10 +103,11 @@
     margin: 0;
   }
   
-  p {
-    margin: 5px;
+  #about p {
+    margin-left: 10px;
     flex: 60%;
     text-align: right;
+    line-height: 1.5;
     color:rgb(0, 0, 85);
   }
 
@@ -169,6 +170,7 @@
 
   .Button {
     display: flex;
+    line-height: 100%;
     flex-direction: column;
     height: 70px;
     width: 250px;
@@ -243,7 +245,6 @@
     margin: 10px
   }
 
-
   .project3 {
     background-image: url('../assets/images/computer-image.gif');
     background-repeat: no-repeat;
@@ -272,6 +273,7 @@
       flex-basis: 100%;
     }
     .flex-item:first-child {
+      margin-top: 15px;
       min-height: 150px;
     }
     .page-section > h2 {
@@ -283,5 +285,27 @@
   
     .page-section > div {
       flex: 100%;
+    }
+
+    #about p {
+      margin-top: 20px;
+      text-align:center;
+    }
+
+    .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    height: 90px;
+    width: 100%;
+    position:absolute;
+    }
+
+    .hero-banner div {
+      padding: 5px;
+      font-size: 13px;
+      margin: auto;
+      margin-top: 125px;
     }
   }
