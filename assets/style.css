@@ -160,29 +160,33 @@
     background-image: url('../assets/images/coding-3.gif');
     background-repeat: no-repeat;
     background-size: 100%;
-
   }
   .project2 {
     background-image: url('../assets/images/7D7o.gif');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position:center;
+    margin: 10px;
+
   }
   .project3 {
     background-image: url('../assets/images/computer-image.gif');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position:center;
+    margin: 10px;
   }
   .project4 {
     background-image: url('../assets/images/screens-and-coding-image.jpeg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position:center;
+    margin: 10px;
   }
   .project5 {
     background-image: url('../assets/images/daily-planning-image.jpeg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position:center;
+    margin: 10px;
   }
