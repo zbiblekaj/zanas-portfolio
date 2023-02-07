@@ -38,7 +38,7 @@ body {
 .profile-pic::before {
   content: '';
   position: absolute;
-  inset: -3px 100px -3px 20px;
+  inset: -3px 50px -3px 50px;
   background: linear-gradient(315deg, #00ccff, #d400d4);
   transition: 0.5s;
   animation: animate 4s linear infinite;
@@ -57,6 +57,14 @@ body {
   }
 }
 
+.profile-pic::after{
+  content: '';
+  position: absolute;
+  inset: 6px;
+  background: #162052;
+  border-radius: 50%;
+  z-index: 1;
+}
 
 
 /* add margin to the main title so that there is some space between the border of the page*/
