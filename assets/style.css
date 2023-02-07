@@ -195,11 +195,13 @@
     background-color: rgb(202, 219, 229, 0.5);
   }
 
+  /* make the text on the buttons more clear.*/
   .Button h3, p {
     position: relative;
     z-index: 1;
   }
-
+  
+  /*  add styling to the buttons so that there is a gap in the borders of the button at the top and bottom for styling*/
   .Button i::before{
     content: '';
     position: absolute;
@@ -211,12 +213,14 @@
     transform: translate(-50%) skewX(325deg);
     transition: 0.5s;
   }
-
+  
+  /* style the gap so that when a user hovers over the gap it moves*/
   .Button:hover i::before{
     width: 20px;
     left: 20%;
   }
-
+  
+  
   .Button i::after {
     content: '';
     position: absolute;
