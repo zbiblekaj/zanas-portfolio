@@ -21,23 +21,43 @@ body {
   background-color: rgb(0, 0, 0, 0.4);
   color: #FFF7EC;
   line-height: 1.5;
-  height: 100px;
+  height: 150px;
   width: 100%;
   position:absolute;
 }
 
 .profile-pic {
-  width: 90px;
-  height: 90px;
-  margin-left: 5px;
-  margin-bottom: 5px;
-  margin-top: 5px;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: rgb(0, 0, 0, .5);
   border-radius: 50%;
-  background-image: url(./images/IMG_1290.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position:center;
+  overflow: hidden;
 }
+
+.profile-pic::before {
+  content: '';
+  position: absolute;
+  inset: -3px 100px -3px 20px;
+  background: linear-gradient(315deg, #00ccff, #d400d4);
+  transition: 0.5s;
+  animation: animate 4s linear infinite;
+}
+
+.profile-pic:hover::before {
+  inset: -20px 0px;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  } 
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+
 
 /* add margin to the main title so that there is some space between the border of the page*/
 .header h1 {
