@@ -97,7 +97,7 @@ body {
 }
 
 /* style the links on the nav bar so that they are non bulletted and in line with the header. Add code so that transitions are smooth. */
-.header ul {
+ul {
   list-style-type: none;
   margin: 0%;
   padding:0%;
@@ -107,13 +107,13 @@ body {
 }
 
 /*style nav links so that they are side by side & display from the first option to the last.*/
-.header li {
+li {
   display: inline;
   float: left;
 }
 
 /* Remove underline on links & apply styles*/
-.header a{
+a{
   text-decoration: none;
   color: white;
   font-size: 20px;
@@ -122,14 +122,14 @@ body {
 }
 
 /* change the color of links when a user hovers over them */
-.header ul:hover a{
+ul:hover a{
   opacity: 0.2;
   filter: blur(2px);
 }
 
 /* change the color of links when a user hovers over them & blur out options that aren't in use.*/
-.header li a:hover{
-  color: rgb(0, 0, 85);
+li a:hover{
+  color: rgb(54, 181, 255);
   opacity: 1;
   filter: blur(0px);
 }
@@ -140,7 +140,7 @@ body {
   align-items: flex-end;
   justify-content: flex-end;
   text-align: right;
-  background-image: url(../assets/images/modern-abstract-blue-transparent-crystal-pattern-background_1409-1283.avif);
+  background-image: url(../assets/images/geometric-lines-black-background-neon-digital-art-amoled-1920x1200-8364.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
@@ -360,43 +360,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px;
 }
 
-/* footer */
-/* style the links on the footer so that they are non bulletted and in line with the heading contact me */
-#contact ul {
-  list-style-type: none;
-  margin: 0%;
-  padding:0%;
-  height: 100%;
-  transition: 0.5s;
-  text-decoration: none;
-}
-
-/*style nav links so that they are side by side & display from the first option to the last.*/
-#contact li {
-  display: inline;
-  float: left;
-}
-
-/* Remove underline on links & apply styles*/
-#contact a{
-  text-decoration: none;
-  color: rgb(54, 181, 255);
-  font-size: 20px;
-  display: block;
-  padding: 8px
-}
-
-/* change the color of links when a user hovers over them */
-#contact ul:hover a{
-  opacity: 0.2;
-  filter: blur(2px);
-}
-
-/* change the color of links when a user hovers over them & blur out options that aren't in use.*/
-#contact li a:hover{
-  opacity: 1;
-  filter: blur(0px);
-}
 
 /* make the webpage responsive to a smaller screensize */
 @media screen and (max-width: 768px) {
