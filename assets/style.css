@@ -370,13 +370,36 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
     margin-top: 125px;
   }
-  #contact {
-
-  }
-  }
+}
 
 @media only screen and (max-width: 900px) {
   .flex-item {
     flex-basis: 100%;
   }
 }
+
+@media only screen and (max-width: 590px) {
+  #contact li{
+    padding: 17px;
+  }
+}
+
+@media only screen and (min-width:590px) and (max-width: 650px) {
+  #contact li{
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width:650px) and (max-width: 700px) {
+  #contact li{
+    padding: 27px;
+  }
+}
+
+@media only screen and (min-width:700px) and (max-width: 768px) {
+  #contact li{
+    padding: 35px;
+  }
+}
+
+
