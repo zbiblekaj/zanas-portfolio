@@ -29,7 +29,11 @@ body {
   line-height: 1.5;
   height: 150px;
   width: 100%;
-  position:absolute;
+  position:absolute;;
+}
+
+#work {
+  transition-duration: 0.5s
 }
 
 /* style profile picture*/
