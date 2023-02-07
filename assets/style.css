@@ -3,12 +3,18 @@
   letter-spacing: 0.1em;
 }
 
+/* inserting font to webpage*/
+@font-face {
+  font-family:'Consolas';
+  src: url(./Consolas-Font/CONSOLA.TTF);
+}
+
 /*apply styling to all aspects of the page. styling includes a congurent font, backgroun color & margin/padding settings. */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: rgb(202, 219, 229);
+  font-family: Consolas;
+  background-color: black;
 }
 
 /* style the header*/
@@ -26,6 +32,7 @@ body {
   position:absolute;
 }
 
+/* style profile picture*/
 .profile-pic {
   position: relative;
   width: 150px;
@@ -66,6 +73,23 @@ body {
   z-index: 1;
 }
 
+.pp-content {
+  position: absolute;
+  inset: 20px;
+  border: 6px solid #070a1c;
+  z-index: 3;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.pp-content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* add margin to the main title so that there is some space between the border of the page*/
 .header h1 {
@@ -120,7 +144,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
-  height: 200px;
+  height: 300px;
 }
 
 /*style the text on the banner so that there is a different background color and the text is white.*/
@@ -149,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
   flex: 60%;
   text-align: right;
   line-height: 1.5;
-  color:rgb(0, 0, 85);
+  color:rgb(54, 181, 255);
 }
 
 /*style the titles on the page so that they are towards the left of the page*/
@@ -175,10 +199,10 @@ h1, h2, h3, h4, h5, h6 {
   flex: 0 0 22%;
   text-align: right;
   padding-right: 15px;
-  border-right: 4px solid rgb(0, 0, 85);
+  border-right: 4px solid rgb(215, 37, 212);
   font-size: 4vw;
   line-height: 1.1;
-  color: rgb(0, 0, 85);
+  color: rgb(54, 181, 255);
 }
 
 /* style portfolio flex containers so that they are on the right side of the line*/
@@ -356,7 +380,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Remove underline on links & apply styles*/
 #contact a{
   text-decoration: none;
-  color: rgb(0, 0, 85);
+  color: rgb(54, 181, 255);
   font-size: 20px;
   display: block;
   padding: 8px
