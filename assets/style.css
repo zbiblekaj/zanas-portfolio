@@ -9,6 +9,10 @@
   src: url(./Consolas-Font/CONSOLA.TTF);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*apply styling to all aspects of the page. styling includes a congurent font, backgroun color & margin/padding settings. */
 body {
   margin: 0;
@@ -22,14 +26,14 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-end;
   background-color: rgb(0, 0, 0, 0.7);
   color: #FFF7EC;
   line-height: 1.5;
   height: 150px;
   width: 100%;
-  position:absolute;;
+  position:absolute;
 }
 
 #work {
@@ -44,6 +48,9 @@ body {
   background: rgb(0, 0, 0, .5);
   border-radius: 50%;
   overflow: hidden;
+  cursor: pointer;
+  margin-right: auto;
+  order: 1;
 }
 
 .profile-pic::before {
@@ -98,7 +105,12 @@ body {
 /* add margin to the main title so that there is some space between the border of the page*/
 .header h1 {
   font-size: 40px;
-  margin-left: 5px;
+  margin-right: auto;
+  order: 2;
+}
+
+nav {
+  order: 3;
 }
 
 /* style the links on the nav bar so that they are non bulletted and in line with the header. Add code so that transitions are smooth. */
@@ -365,6 +377,20 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px;
 }
 
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items:center;
+  background-color: rgb(255,255,255, 0.2);
+  color: #FFF7EC;
+  line-height: 1.5;
+  height: 50px;
+  width: 100%;
+  position:relative;
+  font-size: small;
+}
+
 
 /* make the webpage responsive to a smaller screensize */
 @media screen and (max-width: 768px) {
@@ -413,6 +439,27 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 900px) {
   .flex-item {
     flex-basis: 100%;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    height: 200px;
+    width: 100%;
+    position:absolute;
+  }
+
+  .hero-banner {
+    height: 350px;
+  }
+
+  .hero-banner div {
+    padding: 5px;
+    font-size: 13px;
+    margin: auto;
+    margin-top: 300px;
   }
 }
 
